@@ -1,0 +1,1977 @@
+{
+    "text": " She said, you think the devil has horns? Well so did I, but I was wrong, his hair is combed and he wears a suit and tie He's nice, polite, he'll catch you by surprise A smile so bright, you never bat an eye Said she was in a hurry, that's when she met him Sunday walking down the street She dropped her bag and it fell to his feet, he got down on one knee He handed her the purse and gave a warning to her, saying, miss, you know the devil has horns He's out tonight, walking round downtown carrying a gun At night, he'll fight, you'll die, but you'll see him clear as light An evil sight, you should know the one in sight So then he walked her to her home, he said, a pretty girl like you can't be alone Because the devil, he will take all that you own and he'll strip you to the bone She thanked him twice and said goodnight, she checked her bag but nothing was in sight You think the devil has horns? Well so did I, but I was wrong, his hair is combed and he wears a suit and tie He's nice, polite, he'll catch you by surprise A smile so bright, he's the devil in disguise",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 0,
+            "start": 0.0,
+            "end": 7.44,
+            "text": " She said, you think the devil has horns?",
+            "tokens": [
+                50364,
+                1240,
+                848,
+                11,
+                291,
+                519,
+                264,
+                13297,
+                575,
+                28818,
+                30,
+                50740
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.3377365469932556,
+            "compression_ratio": 1.34640522875817,
+            "no_speech_prob": 0.26745396852493286,
+            "confidence": 0.736,
+            "words": [
+                {
+                    "text": "She",
+                    "start": 0.0,
+                    "end": 3.82,
+                    "confidence": 0.351
+                },
+                {
+                    "text": "said,",
+                    "start": 3.82,
+                    "end": 4.44,
+                    "confidence": 0.964
+                },
+                {
+                    "text": "you",
+                    "start": 4.72,
+                    "end": 4.94,
+                    "confidence": 0.517
+                },
+                {
+                    "text": "think",
+                    "start": 4.94,
+                    "end": 5.38,
+                    "confidence": 0.975
+                },
+                {
+                    "text": "the",
+                    "start": 5.38,
+                    "end": 5.72,
+                    "confidence": 0.979
+                },
+                {
+                    "text": "devil",
+                    "start": 5.72,
+                    "end": 6.14,
+                    "confidence": 0.941
+                },
+                {
+                    "text": "has",
+                    "start": 6.14,
+                    "end": 6.7,
+                    "confidence": 0.558
+                },
+                {
+                    "text": "horns?",
+                    "start": 6.7,
+                    "end": 7.44,
+                    "confidence": 0.987
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "seek": 0,
+            "start": 7.56,
+            "end": 13.86,
+            "text": " Well so did I, but I was wrong, his hair is combed and he wears a suit and tie",
+            "tokens": [
+                50740,
+                1042,
+                370,
+                630,
+                286,
+                11,
+                457,
+                286,
+                390,
+                2085,
+                11,
+                702,
+                2578,
+                307,
+                2512,
+                292,
+                293,
+                415,
+                20877,
+                257,
+                5722,
+                293,
+                7582,
+                51068
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.3377365469932556,
+            "compression_ratio": 1.34640522875817,
+            "no_speech_prob": 0.26745396852493286,
+            "confidence": 0.868,
+            "words": [
+                {
+                    "text": "Well",
+                    "start": 7.56,
+                    "end": 7.82,
+                    "confidence": 0.93
+                },
+                {
+                    "text": "so",
+                    "start": 7.82,
+                    "end": 8.22,
+                    "confidence": 0.506
+                },
+                {
+                    "text": "did",
+                    "start": 8.22,
+                    "end": 8.58,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "I,",
+                    "start": 8.58,
+                    "end": 8.96,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "but",
+                    "start": 9.36,
+                    "end": 9.54,
+                    "confidence": 0.841
+                },
+                {
+                    "text": "I",
+                    "start": 9.54,
+                    "end": 9.86,
+                    "confidence": 0.98
+                },
+                {
+                    "text": "was",
+                    "start": 9.86,
+                    "end": 10.06,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "wrong,",
+                    "start": 10.06,
+                    "end": 10.36,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "his",
+                    "start": 10.54,
+                    "end": 10.64,
+                    "confidence": 0.817
+                },
+                {
+                    "text": "hair",
+                    "start": 10.64,
+                    "end": 10.98,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "is",
+                    "start": 10.98,
+                    "end": 11.3,
+                    "confidence": 0.951
+                },
+                {
+                    "text": "combed",
+                    "start": 11.3,
+                    "end": 11.98,
+                    "confidence": 0.683
+                },
+                {
+                    "text": "and",
+                    "start": 11.98,
+                    "end": 12.14,
+                    "confidence": 0.567
+                },
+                {
+                    "text": "he",
+                    "start": 12.14,
+                    "end": 12.26,
+                    "confidence": 0.944
+                },
+                {
+                    "text": "wears",
+                    "start": 12.26,
+                    "end": 12.6,
+                    "confidence": 0.976
+                },
+                {
+                    "text": "a",
+                    "start": 12.6,
+                    "end": 12.86,
+                    "confidence": 0.97
+                },
+                {
+                    "text": "suit",
+                    "start": 12.86,
+                    "end": 13.16,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "and",
+                    "start": 13.16,
+                    "end": 13.5,
+                    "confidence": 0.882
+                },
+                {
+                    "text": "tie",
+                    "start": 13.5,
+                    "end": 13.86,
+                    "confidence": 0.982
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "seek": 0,
+            "start": 14.14,
+            "end": 18.36,
+            "text": " He's nice, polite, he'll catch you by surprise",
+            "tokens": [
+                51068,
+                634,
+                311,
+                1481,
+                11,
+                25171,
+                11,
+                415,
+                603,
+                3745,
+                291,
+                538,
+                6365,
+                51288
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.3377365469932556,
+            "compression_ratio": 1.34640522875817,
+            "no_speech_prob": 0.26745396852493286,
+            "confidence": 0.992,
+            "words": [
+                {
+                    "text": "He's",
+                    "start": 14.14,
+                    "end": 14.48,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "nice,",
+                    "start": 14.48,
+                    "end": 15.18,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "polite,",
+                    "start": 15.64,
+                    "end": 16.02,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "he'll",
+                    "start": 16.32,
+                    "end": 16.58,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "catch",
+                    "start": 16.58,
+                    "end": 16.98,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "you",
+                    "start": 16.98,
+                    "end": 17.26,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "by",
+                    "start": 17.26,
+                    "end": 17.48,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "surprise",
+                    "start": 17.48,
+                    "end": 18.36,
+                    "confidence": 0.999
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "seek": 0,
+            "start": 18.56,
+            "end": 22.66,
+            "text": " A smile so bright, you never bat an eye",
+            "tokens": [
+                51288,
+                316,
+                7563,
+                370,
+                4730,
+                11,
+                291,
+                1128,
+                7362,
+                364,
+                3313,
+                51508
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.3377365469932556,
+            "compression_ratio": 1.34640522875817,
+            "no_speech_prob": 0.26745396852493286,
+            "confidence": 0.913,
+            "words": [
+                {
+                    "text": "A",
+                    "start": 18.56,
+                    "end": 18.86,
+                    "confidence": 0.912
+                },
+                {
+                    "text": "smile",
+                    "start": 18.86,
+                    "end": 19.38,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "so",
+                    "start": 19.38,
+                    "end": 19.86,
+                    "confidence": 0.878
+                },
+                {
+                    "text": "bright,",
+                    "start": 19.86,
+                    "end": 20.44,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "you",
+                    "start": 20.78,
+                    "end": 20.96,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "never",
+                    "start": 20.96,
+                    "end": 21.48,
+                    "confidence": 0.781
+                },
+                {
+                    "text": "bat",
+                    "start": 21.48,
+                    "end": 21.9,
+                    "confidence": 0.973
+                },
+                {
+                    "text": "an",
+                    "start": 21.9,
+                    "end": 22.2,
+                    "confidence": 0.736
+                },
+                {
+                    "text": "eye",
+                    "start": 22.2,
+                    "end": 22.66,
+                    "confidence": 0.995
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "seek": 2288,
+            "start": 25.54,
+            "end": 32.38,
+            "text": " Said she was in a hurry, that's when she met him Sunday walking down the street",
+            "tokens": [
+                50364,
+                26490,
+                750,
+                390,
+                294,
+                257,
+                11025,
+                11,
+                300,
+                311,
+                562,
+                750,
+                1131,
+                796,
+                7776,
+                4494,
+                760,
+                264,
+                4838,
+                50844
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.2688659032185872,
+            "compression_ratio": 1.544041450777202,
+            "no_speech_prob": 0.03690687566995621,
+            "confidence": 0.896,
+            "words": [
+                {
+                    "text": "Said",
+                    "start": 25.54,
+                    "end": 25.78,
+                    "confidence": 0.9
+                },
+                {
+                    "text": "she",
+                    "start": 25.78,
+                    "end": 26.16,
+                    "confidence": 0.971
+                },
+                {
+                    "text": "was",
+                    "start": 26.16,
+                    "end": 26.66,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "in",
+                    "start": 26.66,
+                    "end": 26.88,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "a",
+                    "start": 26.88,
+                    "end": 27.16,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "hurry,",
+                    "start": 27.16,
+                    "end": 28.18,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "that's",
+                    "start": 28.94,
+                    "end": 29.2,
+                    "confidence": 0.845
+                },
+                {
+                    "text": "when",
+                    "start": 29.2,
+                    "end": 29.4,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "she",
+                    "start": 29.4,
+                    "end": 29.64,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "met",
+                    "start": 29.64,
+                    "end": 30.04,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "him",
+                    "start": 30.04,
+                    "end": 30.22,
+                    "confidence": 0.974
+                },
+                {
+                    "text": "Sunday",
+                    "start": 30.22,
+                    "end": 30.7,
+                    "confidence": 0.472
+                },
+                {
+                    "text": "walking",
+                    "start": 30.7,
+                    "end": 31.26,
+                    "confidence": 0.553
+                },
+                {
+                    "text": "down",
+                    "start": 31.26,
+                    "end": 31.68,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "the",
+                    "start": 31.68,
+                    "end": 31.94,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "street",
+                    "start": 31.94,
+                    "end": 32.38,
+                    "confidence": 0.996
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "seek": 2288,
+            "start": 33.18,
+            "end": 38.9,
+            "text": " She dropped her bag and it fell to his feet, he got down on one knee",
+            "tokens": [
+                50844,
+                1240,
+                8119,
+                720,
+                3411,
+                293,
+                309,
+                5696,
+                281,
+                702,
+                3521,
+                11,
+                415,
+                658,
+                760,
+                322,
+                472,
+                9434,
+                51172
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.2688659032185872,
+            "compression_ratio": 1.544041450777202,
+            "no_speech_prob": 0.03690687566995621,
+            "confidence": 0.86,
+            "words": [
+                {
+                    "text": "She",
+                    "start": 33.18,
+                    "end": 33.52,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "dropped",
+                    "start": 33.52,
+                    "end": 33.86,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "her",
+                    "start": 33.86,
+                    "end": 34.32,
+                    "confidence": 0.762
+                },
+                {
+                    "text": "bag",
+                    "start": 34.32,
+                    "end": 34.64,
+                    "confidence": 0.77
+                },
+                {
+                    "text": "and",
+                    "start": 34.64,
+                    "end": 35.0,
+                    "confidence": 0.924
+                },
+                {
+                    "text": "it",
+                    "start": 35.0,
+                    "end": 35.38,
+                    "confidence": 0.987
+                },
+                {
+                    "text": "fell",
+                    "start": 35.38,
+                    "end": 35.58,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "to",
+                    "start": 35.58,
+                    "end": 36.0,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "his",
+                    "start": 36.0,
+                    "end": 36.28,
+                    "confidence": 0.975
+                },
+                {
+                    "text": "feet,",
+                    "start": 36.28,
+                    "end": 36.6,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "he",
+                    "start": 36.62,
+                    "end": 36.84,
+                    "confidence": 0.987
+                },
+                {
+                    "text": "got",
+                    "start": 36.84,
+                    "end": 37.24,
+                    "confidence": 0.978
+                },
+                {
+                    "text": "down",
+                    "start": 37.24,
+                    "end": 37.92,
+                    "confidence": 0.982
+                },
+                {
+                    "text": "on",
+                    "start": 37.92,
+                    "end": 38.3,
+                    "confidence": 0.505
+                },
+                {
+                    "text": "one",
+                    "start": 38.3,
+                    "end": 38.6,
+                    "confidence": 0.375
+                },
+                {
+                    "text": "knee",
+                    "start": 38.6,
+                    "end": 38.9,
+                    "confidence": 0.999
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "seek": 2288,
+            "start": 39.26,
+            "end": 46.64,
+            "text": " He handed her the purse and gave a warning to her, saying, miss, you know the devil has horns",
+            "tokens": [
+                51172,
+                634,
+                16013,
+                720,
+                264,
+                28345,
+                293,
+                2729,
+                257,
+                9164,
+                281,
+                720,
+                11,
+                1566,
+                11,
+                1713,
+                11,
+                291,
+                458,
+                264,
+                13297,
+                575,
+                28818,
+                51556
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.2688659032185872,
+            "compression_ratio": 1.544041450777202,
+            "no_speech_prob": 0.03690687566995621,
+            "confidence": 0.922,
+            "words": [
+                {
+                    "text": "He",
+                    "start": 39.26,
+                    "end": 39.8,
+                    "confidence": 0.987
+                },
+                {
+                    "text": "handed",
+                    "start": 39.8,
+                    "end": 40.04,
+                    "confidence": 0.841
+                },
+                {
+                    "text": "her",
+                    "start": 40.04,
+                    "end": 40.4,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "the",
+                    "start": 40.4,
+                    "end": 40.7,
+                    "confidence": 0.874
+                },
+                {
+                    "text": "purse",
+                    "start": 40.7,
+                    "end": 40.98,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "and",
+                    "start": 40.98,
+                    "end": 41.16,
+                    "confidence": 0.965
+                },
+                {
+                    "text": "gave",
+                    "start": 41.16,
+                    "end": 41.58,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "a",
+                    "start": 41.58,
+                    "end": 41.94,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "warning",
+                    "start": 41.94,
+                    "end": 42.16,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "to",
+                    "start": 42.16,
+                    "end": 42.82,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "her,",
+                    "start": 42.82,
+                    "end": 43.28,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "saying,",
+                    "start": 43.48,
+                    "end": 43.8,
+                    "confidence": 0.931
+                },
+                {
+                    "text": "miss,",
+                    "start": 44.14,
+                    "end": 44.18,
+                    "confidence": 0.392
+                },
+                {
+                    "text": "you",
+                    "start": 44.24,
+                    "end": 44.38,
+                    "confidence": 0.935
+                },
+                {
+                    "text": "know",
+                    "start": 44.38,
+                    "end": 44.74,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "the",
+                    "start": 44.74,
+                    "end": 45.06,
+                    "confidence": 0.97
+                },
+                {
+                    "text": "devil",
+                    "start": 45.06,
+                    "end": 45.52,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "has",
+                    "start": 45.52,
+                    "end": 46.1,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "horns",
+                    "start": 46.1,
+                    "end": 46.64,
+                    "confidence": 0.992
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "seek": 2288,
+            "start": 46.84,
+            "end": 52.44,
+            "text": " He's out tonight, walking round downtown carrying a gun",
+            "tokens": [
+                51556,
+                634,
+                311,
+                484,
+                4440,
+                11,
+                4494,
+                3098,
+                14209,
+                9792,
+                257,
+                3874,
+                51840
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.2688659032185872,
+            "compression_ratio": 1.544041450777202,
+            "no_speech_prob": 0.03690687566995621,
+            "confidence": 0.837,
+            "words": [
+                {
+                    "text": "He's",
+                    "start": 46.84,
+                    "end": 47.3,
+                    "confidence": 0.705
+                },
+                {
+                    "text": "out",
+                    "start": 47.3,
+                    "end": 47.56,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "tonight,",
+                    "start": 47.56,
+                    "end": 48.28,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "walking",
+                    "start": 48.78,
+                    "end": 49.26,
+                    "confidence": 0.952
+                },
+                {
+                    "text": "round",
+                    "start": 49.26,
+                    "end": 49.88,
+                    "confidence": 0.726
+                },
+                {
+                    "text": "downtown",
+                    "start": 49.88,
+                    "end": 50.66,
+                    "confidence": 0.954
+                },
+                {
+                    "text": "carrying",
+                    "start": 50.66,
+                    "end": 51.76,
+                    "confidence": 0.535
+                },
+                {
+                    "text": "a",
+                    "start": 51.76,
+                    "end": 52.18,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "gun",
+                    "start": 52.18,
+                    "end": 52.44,
+                    "confidence": 0.972
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "seek": 5240,
+            "start": 52.52,
+            "end": 57.52,
+            "text": " At night, he'll fight, you'll die, but you'll see him clear as light",
+            "tokens": [
+                50364,
+                1711,
+                1818,
+                11,
+                415,
+                603,
+                2092,
+                11,
+                291,
+                603,
+                978,
+                11,
+                457,
+                291,
+                603,
+                536,
+                796,
+                1850,
+                382,
+                1442,
+                50632
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23756852149963378,
+            "compression_ratio": 1.6127167630057804,
+            "no_speech_prob": 0.011823584325611591,
+            "confidence": 0.888,
+            "words": [
+                {
+                    "text": "At",
+                    "start": 52.52,
+                    "end": 52.76,
+                    "confidence": 0.361
+                },
+                {
+                    "text": "night,",
+                    "start": 52.76,
+                    "end": 53.14,
+                    "confidence": 0.835
+                },
+                {
+                    "text": "he'll",
+                    "start": 53.46,
+                    "end": 53.76,
+                    "confidence": 0.953
+                },
+                {
+                    "text": "fight,",
+                    "start": 53.76,
+                    "end": 54.22,
+                    "confidence": 0.961
+                },
+                {
+                    "text": "you'll",
+                    "start": 54.52,
+                    "end": 54.82,
+                    "confidence": 0.953
+                },
+                {
+                    "text": "die,",
+                    "start": 54.82,
+                    "end": 55.22,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "but",
+                    "start": 55.62,
+                    "end": 55.66,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "you'll",
+                    "start": 55.66,
+                    "end": 56.08,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "see",
+                    "start": 56.08,
+                    "end": 56.28,
+                    "confidence": 0.99
+                },
+                {
+                    "text": "him",
+                    "start": 56.28,
+                    "end": 56.46,
+                    "confidence": 0.933
+                },
+                {
+                    "text": "clear",
+                    "start": 56.46,
+                    "end": 56.84,
+                    "confidence": 0.986
+                },
+                {
+                    "text": "as",
+                    "start": 56.84,
+                    "end": 57.14,
+                    "confidence": 0.781
+                },
+                {
+                    "text": "light",
+                    "start": 57.14,
+                    "end": 57.52,
+                    "confidence": 0.891
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "seek": 5240,
+            "start": 57.82,
+            "end": 61.88,
+            "text": " An evil sight, you should know the one in sight",
+            "tokens": [
+                50632,
+                1107,
+                6724,
+                7860,
+                11,
+                291,
+                820,
+                458,
+                264,
+                472,
+                294,
+                7860,
+                50856
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23756852149963378,
+            "compression_ratio": 1.6127167630057804,
+            "no_speech_prob": 0.011823584325611591,
+            "confidence": 0.832,
+            "words": [
+                {
+                    "text": "An",
+                    "start": 57.82,
+                    "end": 58.4,
+                    "confidence": 0.888
+                },
+                {
+                    "text": "evil",
+                    "start": 58.4,
+                    "end": 59.14,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "sight,",
+                    "start": 59.14,
+                    "end": 59.6,
+                    "confidence": 0.704
+                },
+                {
+                    "text": "you",
+                    "start": 59.7,
+                    "end": 59.98,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "should",
+                    "start": 59.98,
+                    "end": 60.26,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "know",
+                    "start": 60.26,
+                    "end": 60.64,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "the",
+                    "start": 60.64,
+                    "end": 60.96,
+                    "confidence": 0.977
+                },
+                {
+                    "text": "one",
+                    "start": 60.96,
+                    "end": 61.2,
+                    "confidence": 0.586
+                },
+                {
+                    "text": "in",
+                    "start": 61.2,
+                    "end": 61.44,
+                    "confidence": 0.543
+                },
+                {
+                    "text": "sight",
+                    "start": 61.44,
+                    "end": 61.88,
+                    "confidence": 0.831
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "seek": 5240,
+            "start": 64.86,
+            "end": 71.76,
+            "text": " So then he walked her to her home, he said, a pretty girl like you can't be alone",
+            "tokens": [
+                50980,
+                407,
+                550,
+                415,
+                7628,
+                720,
+                281,
+                720,
+                1280,
+                11,
+                415,
+                848,
+                11,
+                257,
+                1238,
+                2013,
+                411,
+                291,
+                393,
+                380,
+                312,
+                3312,
+                51364
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23756852149963378,
+            "compression_ratio": 1.6127167630057804,
+            "no_speech_prob": 0.011823584325611591,
+            "confidence": 0.967,
+            "words": [
+                {
+                    "text": "So",
+                    "start": 64.86,
+                    "end": 65.12,
+                    "confidence": 0.978
+                },
+                {
+                    "text": "then",
+                    "start": 65.12,
+                    "end": 65.52,
+                    "confidence": 0.986
+                },
+                {
+                    "text": "he",
+                    "start": 65.52,
+                    "end": 65.7,
+                    "confidence": 0.978
+                },
+                {
+                    "text": "walked",
+                    "start": 65.7,
+                    "end": 66.08,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "her",
+                    "start": 66.08,
+                    "end": 66.44,
+                    "confidence": 0.966
+                },
+                {
+                    "text": "to",
+                    "start": 66.44,
+                    "end": 66.66,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "her",
+                    "start": 66.66,
+                    "end": 66.92,
+                    "confidence": 0.764
+                },
+                {
+                    "text": "home,",
+                    "start": 66.92,
+                    "end": 67.4,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "he",
+                    "start": 68.2,
+                    "end": 68.36,
+                    "confidence": 0.965
+                },
+                {
+                    "text": "said,",
+                    "start": 68.36,
+                    "end": 68.76,
+                    "confidence": 0.986
+                },
+                {
+                    "text": "a",
+                    "start": 68.92,
+                    "end": 69.08,
+                    "confidence": 0.955
+                },
+                {
+                    "text": "pretty",
+                    "start": 69.08,
+                    "end": 69.44,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "girl",
+                    "start": 69.44,
+                    "end": 69.84,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "like",
+                    "start": 69.84,
+                    "end": 70.12,
+                    "confidence": 0.91
+                },
+                {
+                    "text": "you",
+                    "start": 70.12,
+                    "end": 70.36,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "can't",
+                    "start": 70.36,
+                    "end": 70.9,
+                    "confidence": 0.971
+                },
+                {
+                    "text": "be",
+                    "start": 70.9,
+                    "end": 71.16,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "alone",
+                    "start": 71.16,
+                    "end": 71.76,
+                    "confidence": 0.997
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "seek": 5240,
+            "start": 72.6,
+            "end": 78.18,
+            "text": " Because the devil, he will take all that you own and he'll strip you to the bone",
+            "tokens": [
+                51364,
+                1436,
+                264,
+                13297,
+                11,
+                415,
+                486,
+                747,
+                439,
+                300,
+                291,
+                1065,
+                293,
+                415,
+                603,
+                12828,
+                291,
+                281,
+                264,
+                9026,
+                51664
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23756852149963378,
+            "compression_ratio": 1.6127167630057804,
+            "no_speech_prob": 0.011823584325611591,
+            "confidence": 0.908,
+            "words": [
+                {
+                    "text": "Because",
+                    "start": 72.6,
+                    "end": 73.08,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "the",
+                    "start": 73.08,
+                    "end": 73.46,
+                    "confidence": 0.985
+                },
+                {
+                    "text": "devil,",
+                    "start": 73.46,
+                    "end": 73.86,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "he",
+                    "start": 73.86,
+                    "end": 74.18,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "will",
+                    "start": 74.18,
+                    "end": 74.42,
+                    "confidence": 0.986
+                },
+                {
+                    "text": "take",
+                    "start": 74.42,
+                    "end": 74.8,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "all",
+                    "start": 74.8,
+                    "end": 75.1,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "that",
+                    "start": 75.1,
+                    "end": 75.32,
+                    "confidence": 0.983
+                },
+                {
+                    "text": "you",
+                    "start": 75.32,
+                    "end": 75.54,
+                    "confidence": 0.963
+                },
+                {
+                    "text": "own",
+                    "start": 75.54,
+                    "end": 75.92,
+                    "confidence": 0.967
+                },
+                {
+                    "text": "and",
+                    "start": 75.92,
+                    "end": 76.18,
+                    "confidence": 0.879
+                },
+                {
+                    "text": "he'll",
+                    "start": 76.18,
+                    "end": 76.76,
+                    "confidence": 0.813
+                },
+                {
+                    "text": "strip",
+                    "start": 76.76,
+                    "end": 76.94,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "you",
+                    "start": 76.94,
+                    "end": 77.22,
+                    "confidence": 0.916
+                },
+                {
+                    "text": "to",
+                    "start": 77.22,
+                    "end": 77.52,
+                    "confidence": 0.573
+                },
+                {
+                    "text": "the",
+                    "start": 77.52,
+                    "end": 77.8,
+                    "confidence": 0.677
+                },
+                {
+                    "text": "bone",
+                    "start": 77.8,
+                    "end": 78.18,
+                    "confidence": 0.996
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "seek": 7840,
+            "start": 78.52,
+            "end": 83.4,
+            "text": " She thanked him twice and said goodnight, she checked her bag but nothing was in sight",
+            "tokens": [
+                50364,
+                1240,
+                48137,
+                796,
+                6091,
+                293,
+                848,
+                665,
+                6402,
+                11,
+                750,
+                10033,
+                720,
+                3411,
+                457,
+                1825,
+                390,
+                294,
+                7860,
+                50612
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.15616845481003386,
+            "compression_ratio": 1.4820512820512821,
+            "no_speech_prob": 0.02280310168862343,
+            "confidence": 0.873,
+            "words": [
+                {
+                    "text": "She",
+                    "start": 78.52,
+                    "end": 78.76,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "thanked",
+                    "start": 78.76,
+                    "end": 79.1,
+                    "confidence": 0.868
+                },
+                {
+                    "text": "him",
+                    "start": 79.1,
+                    "end": 79.32,
+                    "confidence": 0.975
+                },
+                {
+                    "text": "twice",
+                    "start": 79.32,
+                    "end": 79.64,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "and",
+                    "start": 79.64,
+                    "end": 79.98,
+                    "confidence": 0.53
+                },
+                {
+                    "text": "said",
+                    "start": 79.98,
+                    "end": 80.18,
+                    "confidence": 0.982
+                },
+                {
+                    "text": "goodnight,",
+                    "start": 80.18,
+                    "end": 80.68,
+                    "confidence": 0.738
+                },
+                {
+                    "text": "she",
+                    "start": 80.84,
+                    "end": 80.92,
+                    "confidence": 0.969
+                },
+                {
+                    "text": "checked",
+                    "start": 80.92,
+                    "end": 81.26,
+                    "confidence": 0.613
+                },
+                {
+                    "text": "her",
+                    "start": 81.26,
+                    "end": 81.52,
+                    "confidence": 0.978
+                },
+                {
+                    "text": "bag",
+                    "start": 81.52,
+                    "end": 81.8,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "but",
+                    "start": 81.8,
+                    "end": 82.06,
+                    "confidence": 0.766
+                },
+                {
+                    "text": "nothing",
+                    "start": 82.06,
+                    "end": 82.48,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "was",
+                    "start": 82.48,
+                    "end": 83.0,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "in",
+                    "start": 83.0,
+                    "end": 83.32,
+                    "confidence": 0.971
+                },
+                {
+                    "text": "sight",
+                    "start": 83.32,
+                    "end": 83.4,
+                    "confidence": 0.991
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "seek": 7840,
+            "start": 83.54,
+            "end": 92.42,
+            "text": " You think the devil has horns? Well so did I, but I was wrong, his hair is combed and he wears a suit and tie",
+            "tokens": [
+                50612,
+                509,
+                519,
+                264,
+                13297,
+                575,
+                28818,
+                30,
+                1042,
+                370,
+                630,
+                286,
+                11,
+                457,
+                286,
+                390,
+                2085,
+                11,
+                702,
+                2578,
+                307,
+                2512,
+                292,
+                293,
+                415,
+                20877,
+                257,
+                5722,
+                293,
+                7582,
+                51072
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.15616845481003386,
+            "compression_ratio": 1.4820512820512821,
+            "no_speech_prob": 0.02280310168862343,
+            "confidence": 0.97,
+            "words": [
+                {
+                    "text": "You",
+                    "start": 83.54,
+                    "end": 83.64,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "think",
+                    "start": 83.64,
+                    "end": 83.98,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "the",
+                    "start": 83.98,
+                    "end": 84.3,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "devil",
+                    "start": 84.3,
+                    "end": 84.84,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "has",
+                    "start": 84.84,
+                    "end": 85.44,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "horns?",
+                    "start": 85.44,
+                    "end": 86.02,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "Well",
+                    "start": 86.16,
+                    "end": 86.32,
+                    "confidence": 0.72
+                },
+                {
+                    "text": "so",
+                    "start": 86.32,
+                    "end": 86.8,
+                    "confidence": 0.939
+                },
+                {
+                    "text": "did",
+                    "start": 86.8,
+                    "end": 87.14,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "I,",
+                    "start": 87.14,
+                    "end": 87.48,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "but",
+                    "start": 87.92,
+                    "end": 88.12,
+                    "confidence": 0.936
+                },
+                {
+                    "text": "I",
+                    "start": 88.12,
+                    "end": 88.46,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "was",
+                    "start": 88.46,
+                    "end": 88.66,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "wrong,",
+                    "start": 88.66,
+                    "end": 88.96,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "his",
+                    "start": 89.12,
+                    "end": 89.28,
+                    "confidence": 0.9
+                },
+                {
+                    "text": "hair",
+                    "start": 89.28,
+                    "end": 89.56,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "is",
+                    "start": 89.56,
+                    "end": 89.8,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "combed",
+                    "start": 89.8,
+                    "end": 90.42,
+                    "confidence": 0.995
+                },
+                {
+                    "text": "and",
+                    "start": 90.42,
+                    "end": 90.62,
+                    "confidence": 0.898
+                },
+                {
+                    "text": "he",
+                    "start": 90.62,
+                    "end": 90.84,
+                    "confidence": 0.987
+                },
+                {
+                    "text": "wears",
+                    "start": 90.84,
+                    "end": 91.14,
+                    "confidence": 0.989
+                },
+                {
+                    "text": "a",
+                    "start": 91.14,
+                    "end": 91.44,
+                    "confidence": 0.993
+                },
+                {
+                    "text": "suit",
+                    "start": 91.44,
+                    "end": 91.76,
+                    "confidence": 0.997
+                },
+                {
+                    "text": "and",
+                    "start": 91.76,
+                    "end": 92.06,
+                    "confidence": 0.992
+                },
+                {
+                    "text": "tie",
+                    "start": 92.06,
+                    "end": 92.42,
+                    "confidence": 0.995
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "seek": 7840,
+            "start": 92.62,
+            "end": 96.8,
+            "text": " He's nice, polite, he'll catch you by surprise",
+            "tokens": [
+                51072,
+                634,
+                311,
+                1481,
+                11,
+                25171,
+                11,
+                415,
+                603,
+                3745,
+                291,
+                538,
+                6365,
+                51292
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.15616845481003386,
+            "compression_ratio": 1.4820512820512821,
+            "no_speech_prob": 0.02280310168862343,
+            "confidence": 0.997,
+            "words": [
+                {
+                    "text": "He's",
+                    "start": 92.62,
+                    "end": 92.98,
+                    "confidence": 0.991
+                },
+                {
+                    "text": "nice,",
+                    "start": 92.98,
+                    "end": 93.68,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "polite,",
+                    "start": 94.0,
+                    "end": 94.66,
+                    "confidence": 1.0
+                },
+                {
+                    "text": "he'll",
+                    "start": 94.94,
+                    "end": 95.16,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "catch",
+                    "start": 95.16,
+                    "end": 95.5,
+                    "confidence": 1.0
+                },
+                {
+                    "text": "you",
+                    "start": 95.5,
+                    "end": 95.76,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "by",
+                    "start": 95.76,
+                    "end": 96.0,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "surprise",
+                    "start": 96.0,
+                    "end": 96.8,
+                    "confidence": 0.999
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "seek": 7840,
+            "start": 97.18,
+            "end": 101.04,
+            "text": " A smile so bright, he's the devil in disguise",
+            "tokens": [
+                51292,
+                316,
+                7563,
+                370,
+                4730,
+                11,
+                415,
+                311,
+                264,
+                13297,
+                294,
+                32751,
+                51508
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.15616845481003386,
+            "compression_ratio": 1.4820512820512821,
+            "no_speech_prob": 0.02280310168862343,
+            "confidence": 0.969,
+            "words": [
+                {
+                    "text": "A",
+                    "start": 97.18,
+                    "end": 97.44,
+                    "confidence": 0.95
+                },
+                {
+                    "text": "smile",
+                    "start": 97.44,
+                    "end": 98.1,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "so",
+                    "start": 98.1,
+                    "end": 98.48,
+                    "confidence": 0.988
+                },
+                {
+                    "text": "bright,",
+                    "start": 98.48,
+                    "end": 98.96,
+                    "confidence": 0.999
+                },
+                {
+                    "text": "he's",
+                    "start": 99.24,
+                    "end": 99.48,
+                    "confidence": 0.996
+                },
+                {
+                    "text": "the",
+                    "start": 99.48,
+                    "end": 99.64,
+                    "confidence": 0.792
+                },
+                {
+                    "text": "devil",
+                    "start": 99.64,
+                    "end": 99.92,
+                    "confidence": 0.994
+                },
+                {
+                    "text": "in",
+                    "start": 99.92,
+                    "end": 100.48,
+                    "confidence": 0.998
+                },
+                {
+                    "text": "disguise",
+                    "start": 100.48,
+                    "end": 101.04,
+                    "confidence": 0.998
+                }
+            ]
+        }
+    ],
+    "language": "en",
+    "language_probs": {
+        "en": 0.9623357057571411,
+        "zh": 0.0027030031196773052,
+        "de": 0.000891355739440769,
+        "es": 0.0012768080923706293,
+        "ru": 0.0013591552851721644,
+        "ko": 0.019662993028759956,
+        "fr": 0.0005078791873529553,
+        "ja": 0.0009341327240690589,
+        "pt": 0.0021719238720834255,
+        "tr": 0.00020202038285788149,
+        "pl": 0.000622266554273665,
+        "ca": 2.5831088805716718e-06,
+        "nl": 0.0002939379191957414,
+        "ar": 0.00023252404935192317,
+        "sv": 8.421462553087622e-05,
+        "it": 0.00020202038285788149,
+        "id": 0.00010813372500706464,
+        "hi": 2.8208365620230325e-05,
+        "fi": 8.162361336871982e-05,
+        "vi": 0.000532252830453217,
+        "he": 8.081831765593961e-06,
+        "uk": 1.2323322152951732e-05,
+        "el": 6.873397796880454e-05,
+        "ms": 5.1078754040645435e-05,
+        "cs": 1.3324688552529551e-05,
+        "ro": 3.510588067001663e-05,
+        "da": 7.43191412766464e-05,
+        "hu": 2.0002727978862822e-05,
+        "ta": 7.474473022739403e-06,
+        "no": 2.3753826098982245e-05,
+        "th": 0.0002289190742885694,
+        "ur": 6.393255716830026e-06,
+        "hr": 1.8033005062534357e-06,
+        "bg": 2.503634959793999e-06,
+        "lt": 1.8316985688215937e-06,
+        "la": 0.00023618577688466758,
+        "mi": 0.0001133231635321863,
+        "ml": 3.7958507164148614e-05,
+        "cy": 0.0011445233831182122,
+        "sk": 3.316777338113752e-06,
+        "te": 1.0216393093287479e-05,
+        "fa": 2.209450030932203e-06,
+        "lv": 1.860543193288322e-06,
+        "bn": 3.938770532840863e-06,
+        "sr": 3.40770434092974e-08,
+        "az": 8.303390330866023e-08,
+        "sl": 1.8898427924796124e-06,
+        "kn": 1.1173431602173878e-07,
+        "et": 4.5594578068630653e-07,
+        "mk": 9.687258106794161e-09,
+        "br": 5.353007509256713e-05,
+        "eu": 1.8316985688215937e-06,
+        "is": 1.6582844182266854e-05,
+        "hy": 7.061826750032196e-07,
+        "ne": 1.2012570778097142e-06,
+        "mn": 4.677405740949325e-06,
+        "bs": 4.2832138547055365e-07,
+        "kk": 2.47893439109248e-07,
+        "sq": 2.0874719552921306e-07,
+        "sw": 1.7207214568770723e-06,
+        "gl": 3.316777338113752e-06,
+        "mr": 1.871197667924207e-07,
+        "pa": 7.061826750032196e-07,
+        "si": 8.688788511790335e-05,
+        "km": 0.0009943791665136814,
+        "sn": 7.667828322155401e-05,
+        "yo": 2.8816659778385656e-06,
+        "so": 2.4544771548562494e-08,
+        "af": 1.361202635052905e-06,
+        "oc": 9.804374485611334e-07,
+        "ka": 2.2348270789507296e-08,
+        "be": 9.502725788479438e-07,
+        "tg": 2.7111526357259663e-09,
+        "sd": 3.0850836196805176e-07,
+        "gu": 1.9265414152869198e-08,
+        "am": 5.796700364157914e-08,
+        "yi": 3.265355644543888e-06,
+        "lo": 1.8316985688215937e-06,
+        "uz": 1.3421178612915696e-09,
+        "fo": 2.6651055122783873e-06,
+        "ht": 2.503634959793999e-06,
+        "ps": 1.6005201075586228e-07,
+        "tk": 8.094007242220869e-09,
+        "nn": 0.0011808545095846057,
+        "mt": 5.980707129538132e-08,
+        "sa": 1.4184056453814264e-05,
+        "lb": 7.968520954193536e-09,
+        "my": 1.4634306353400461e-05,
+        "bo": 1.6677803387210588e-06,
+        "tl": 0.00011510774493217468,
+        "mg": 1.809817895548349e-08,
+        "as": 1.8421876291085937e-07,
+        "tt": 1.7233134919081294e-09,
+        "haw": 0.0007744233007542789,
+        "ln": 2.8920808858856617e-08,
+        "ha": 1.4887157284704244e-08,
+        "ba": 9.687258106794161e-09,
+        "jw": 0.0002939379191957414,
+        "su": 2.0032857150908967e-08
+    }
+}

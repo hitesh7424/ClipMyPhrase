@@ -1,0 +1,226 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #1a1a1a;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+    margin-top: 1.5em;
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    width: calc(100% - 120px);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+audio {
+    width: 100%;
+    margin-top: 1em;
+}
+
+/* --- UPDATED & NEW STYLES --- */
+
+/* This is now just a container for the progress bar */
+#timeline-container {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    /* Much slimmer */
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin: 0.5em 0 1.5em 0;
+}
+
+/* The new progress bar that moves with the audio */
+#progress-bar {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    /* Starts at 0, updated by JS */
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* The new container for our readable, wrappable transcript */
+#clickable-transcript {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    line-height: 2;
+    /* More space between lines */
+    max-height: 200px;
+    /* Prevent it from getting too tall */
+    overflow-y: auto;
+    /* Add a scrollbar if needed */
+}
+
+/* The style for each individual, clickable word */
+.transcript-word {
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.transcript-word:hover {
+    background-color: #e9ecef;
+}
+
+/* The highlight for the currently playing word */
+.transcript-word.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* --- END OF NEW STYLES --- */
+
+#phrase-builder {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 50px;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+#phrase-builder .placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+.word-pill {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.remove-word-btn {
+    background: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.remove-word-btn:hover {
+    background: #d93025;
+}
+
+.clip-controls {
+    margin-top: 1.5em;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.secondary {
+    background-color: #6c757d;
+}
+
+.secondary:hover {
+    background-color: #5a6268;
+}
+
+#clip-result-area {
+    margin-top: 1.5em;
+    padding: 1em;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+#clip-result-area h3 {
+    margin-top: 0;
+}
+
+#download-clip-link {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #007bff;
+    animation: spin 1s ease infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#error-message {
+    color: #d93025;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}

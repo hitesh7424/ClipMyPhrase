@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipMyPhrase</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>ClipMyPhrase</h1>
+        <p>Upload an audio file, click words in the transcript to build a new phrase, then create your clip.</p>
+
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="file" accept="audio/*" required>
+            <button type="submit">Transcribe</button>
+        </form>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Transcribing, please wait...</p>
+        </div>
+
+        <div id="result" class="hidden">
+            <!-- UPDATED: More descriptive title -->
+            <h2>1. Click Words in the Transcript Below to Select Them</h2>
+            <audio id="audio-player" controls></audio>
+            
+            <!-- NEW: A simple progress bar -->
+            <div id="timeline-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <!-- NEW: A dedicated, wrappable area for the transcript -->
+            <div id="clickable-transcript">
+                <!-- Clickable word spans will be generated here -->
+            </div>
+            
+            <h2>2. Your Custom Phrase</h2>
+            <div id="phrase-builder">
+                <span class="placeholder">Selected words will appear here...</span>
+            </div>
+
+            <div class="clip-controls">
+                 <button id="create-clip-btn">3. Create Clip from Phrase</button>
+                 <button id="clear-phrase-btn" type="button" class="secondary">Clear Phrase</button>
+            </div>
+            <div id="clip-loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Generating your clip...</p>
+            </div>
+            <div id="clip-result-area" class="hidden">
+                <h3>Your New Clip:</h3>
+                <audio id="clip-player" controls></audio>
+                <a id="download-clip-link" href="#" download="my_clip.wav">Download Clip</a>
+            </div>
+        </div>
+        
+        <div id="error-message" class="hidden"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
