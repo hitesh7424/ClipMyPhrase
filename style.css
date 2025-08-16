@@ -129,3 +129,38 @@ audio {
 #downloadLink:hover {
     background-color: #36a420;
 }
+
+/* --- Add these new styles for the tooltip --- */
+
+.word-token {
+    /* This is crucial for positioning the tooltip relative to the word */
+    position: relative; 
+}
+
+/* Style for the tooltip box itself */
+.word-token::after {
+    content: attr(data-timestamp); /* This pulls the text from a data attribute */
+    position: absolute;
+    bottom: 125%; /* Position it above the word */
+    left: 50%;
+    transform: translateX(-50%); /* Center the tooltip */
+
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap; /* Prevent the timestamp from wrapping to a new line */
+
+    /* Hide it by default */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
+}
+
+/* Show the tooltip on hover */
+.word-token:hover::after {
+    visibility: visible;
+    opacity: 1;
+}

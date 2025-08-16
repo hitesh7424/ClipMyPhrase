@@ -128,16 +128,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // --- UI and Clipping Functions (no changes from previous version) ---
-    function displayTranscription(words) {
-        words.forEach((wordData, index) => {
-            const wordEl = document.createElement('span');
-            wordEl.textContent = wordData.word;
-            wordEl.className = 'word-token';
-            wordEl.dataset.index = index;
-            wordEl.addEventListener('click', () => addWordToPhrase(wordData));
-            transcriptionOutput.appendChild(wordEl);
-        });
-    }
+    // --- Replace your existing displayTranscription function with this one ---
+
+function displayTranscription(words) {
+    words.forEach((wordData, index) => {
+        const wordEl = document.createElement('span');
+        wordEl.textContent = wordData.word;
+        wordEl.className = 'word-token';
+        wordEl.dataset.index = index;
+        
+        // --- THIS IS THE NEW PART ---
+        // Format the timestamp nicely to two decimal places
+        const startTime = wordData.startTime.toFixed(2);
+        const endTime = wordData.endTime.toFixed(2);
+        // Create the data-timestamp attribute for the CSS tooltip
+        wordEl.dataset.timestamp = `${startTime}s - ${endTime}s`;
+        // --- END OF NEW PART ---
+
+        wordEl.addEventListener('click', () => addWordToPhrase(wordData));
+        transcriptionOutput.appendChild(wordEl);
+    });
+}
 
     function addWordToPhrase(wordData) {
         const wordEl = document.createElement('span');
