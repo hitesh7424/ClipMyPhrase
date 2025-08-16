@@ -7,13 +7,13 @@ module.exports = async (req, res) => {
   }
 
   try {
-    // Read raw audio bytes
+    // Read audio file from request body
     const chunks = [];
     for await (const chunk of req) chunks.push(chunk);
     const buf = Buffer.concat(chunks);
     const base64Audio = buf.toString('base64');
 
-    // Gemini API request
+    // Call Gemini API
     const response = await axios.post(
       'https://api.genai.google.com/v1alpha2/models/gemini-2.0-flash:generateContent',
       {
@@ -24,16 +24,16 @@ module.exports = async (req, res) => {
             config: {
               responseModalities: ['TEXT'],
               temperature: 0.5,
-              maxOutputTokens: 1024
-            }
-          }
-        ]
+              maxOutputTokens: 1024,
+            },
+          },
+        ],
       },
       {
         headers: {
           'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
-          'Content-Type': 'application/json'
-        }
+          'Content-Type': 'application/json',
+        },
       }
     );
 

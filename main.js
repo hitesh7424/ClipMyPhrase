@@ -12,6 +12,7 @@ uploadBtn.addEventListener('click', async () => {
     audioPlayer.src = url;
     audioPlayer.play();
 
+    // Read file as ArrayBuffer
     const reader = new FileReader();
     reader.onload = async () => {
         try {
