@@ -23,20 +23,38 @@ ClipMyPhrase is a web application that allows you to upload audio files, transcr
 
 ## Setup & Usage
 
-1. **Install dependencies**  
-	- Python 3.8+  
-	- `pip install flask pydub whisper-timestamped`
 
-2. **Run the app**  
-	```
+## Used Libraries
+
+- [Flask](https://flask.palletsprojects.com/) – Web framework
+- [pydub](https://github.com/jiaaro/pydub) – Audio manipulation
+- [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) – Transcription with word-level timestamps
+- [Werkzeug](https://werkzeug.palletsprojects.com/) – Secure file handling
+
+## Installation
+
+Install the required libraries with pip:
+
+```bash
+pip install flask pydub whisper-timestamped werkzeug
+```
+
+## Setup & Usage
+
+1. **Run the app**
+
+	```bash
 	python app.py
 	```
+
 	Then open your browser at [http://localhost:5000](http://localhost:5000).
 
-3. **Upload an audio file**  
+2. **Upload an audio file**
+
 	Use the web interface to upload and transcribe.
 
-4. **Select words and create clips**  
+3. **Select words and create clips**
+
 	Highlight words/phrases and generate your custom audio.
 
 ## License
