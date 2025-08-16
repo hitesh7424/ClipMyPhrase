@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClipMyPhrase</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription & Clipper</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>ClipMyPhrase 🎵✂️ g</h1>
+    <div class="container">
+        <h1>Audio Transcription & Clipper</h1>
+        <p>Upload an audio file to get a timestamped transcription. Click on words to select a segment to clip.</p>
 
-    <!-- Upload Section -->
-    <div class="section upload-section">
-      <label for="audioUpload">Upload Audio:</label>
-      <input type="file" id="audioUpload" accept="audio/*">
-      <button id="uploadBtn">Upload & Transcribe</button>
+        <input type="file" id="audioFileInput" accept="audio/*">
+        <button id="transcribeButton">Transcribe</button>
+
+        <div id="loader" class="hidden"></div>
+
+        <div id="transcriptionOutput"></div>
+
+        <div id="clippingControls" class="hidden">
+            <button id="clipButton">Clip Selected Audio</button>
+            <audio id="clippedAudioPlayer" controls></audio>
+        </div>
     </div>
 
-    <!-- Audio Player Section -->
-    <div class="section player-section">
-      <audio id="audioPlayer" controls>
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-
-    <!-- Transcript Section -->
-    <div class="section transcript-section">
-      <h2>Transcript</h2>
-      <pre id="transcript"></pre>
-    </div>
-  </div>
-
-  <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
