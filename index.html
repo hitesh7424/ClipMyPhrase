@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Transcription & Clipper</title>
+    <title>ClipMyPhrase</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Audio Transcription & Clipper</h1>
-        <p>Upload an audio file to get a timestamped transcription. Click on words to select a segment to clip.</p>
+        <header>
+            <h1>ClipMyPhrase</h1>
+            <p>Select words from your audio to create a new phrase.</p>
+        </header>
 
-        <input type="file" id="audioFileInput" accept="audio/*">
-        <button id="transcribeButton">Transcribe</button>
+        <section class="upload-section">
+            <input type="file" id="audioFileInput" accept="audio/*">
+            <button id="transcribeButton">1. Transcribe Audio</button>
+        </section>
 
         <div id="loader" class="hidden"></div>
+        <div id="results" class="hidden">
+            <section class="transcription-section">
+                <h2>Original Words</h2>
+                <p>Click words to add them to your new phrase below.</p>
+                <div id="transcriptionOutput"></div>
+            </section>
 
-        <div id="transcriptionOutput"></div>
+            <section class="phrase-builder-section">
+                <h2>Your New Phrase</h2>
+                <div id="phraseOutput"></div>
+                <div class="actions">
+                    <button id="createClipButton">2. Create & Download Clip</button>
+                    <button id="clearPhraseButton">Clear</button>
+                </div>
+            </section>
 
-        <div id="clippingControls" class="hidden">
-            <button id="clipButton">Clip Selected Audio</button>
-            <audio id="clippedAudioPlayer" controls></audio>
+            <section class="player-section">
+                 <audio id="clippedAudioPlayer" controls></audio>
+                 <a id="downloadLink" class="hidden">Download Clip</a>
+            </section>
         </div>
     </div>
 
