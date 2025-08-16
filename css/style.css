@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+#subtitles {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 50px;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 200px;
+}
