@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let transcribedWords = [];
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
+    // --- Configuration ---
+    const CHUNK_DURATION_SECONDS = 9; // Keep this under 10 to be safe
+
     // --- Event Listeners ---
     transcribeButton.addEventListener('click', handleTranscribe);
     createClipButton.addEventListener('click', handleCreateClip);
@@ -25,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         downloadLink.classList.add('hidden');
     });
 
-    // --- Functions ---
+    // --- Core Transcription Logic ---
     async function handleTranscribe() {
         const file = audioFileInput.files[0];
         if (!file) {
@@ -33,37 +36,98 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Reset UI
+        // 1. Reset UI
         loader.classList.remove('hidden');
         resultsDiv.classList.add('hidden');
         transcriptionOutput.innerHTML = '';
         phraseOutput.innerHTML = '';
-
-        // Decode audio for later use in clipping
-        const arrayBuffer = await file.arrayBuffer();
-        originalAudioBuffer = await audioContext.decodeAudioData(arrayBuffer);
-
-        // Send to backend for transcription
-        const formData = new FormData();
-        formData.append('audio', file);
+        transcribeButton.disabled = true;
+        transcribeButton.textContent = 'Transcribing...';
 
         try {
-            const response = await fetch('/api/transcribe', { method: 'POST', body: formData });
-            if (!response.ok) throw new Error(`Server error: ${response.statusText}`);
-            
-            const result = await response.json();
-            transcribedWords = result.words;
+            // 2. Load and decode the full audio file in the browser
+            const arrayBuffer = await file.arrayBuffer();
+            originalAudioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+
+            // 3. Slice the audio into chunks
+            const chunks = sliceAudioBuffer(originalAudioBuffer);
+
+            // 4. Transcribe each chunk one by one
+            let allWords = [];
+            for (let i = 0; i < chunks.length; i++) {
+                console.log(`Transcribing chunk ${i + 1} of ${chunks.length}...`);
+                transcribeButton.textContent = `Transcribing chunk ${i + 1}/${chunks.length}`;
+                const chunkBlob = bufferToWave(chunks[i].buffer);
+                const chunkTranscription = await transcribeChunk(chunkBlob);
+                
+                // 5. Adjust timestamps and collect words
+                const adjustedWords = chunkTranscription.map(word => ({
+                    ...word,
+                    startTime: word.startTime + chunks[i].startTime,
+                    endTime: word.endTime + chunks[i].startTime,
+                }));
+                allWords.push(...adjustedWords);
+            }
+
+            transcribedWords = allWords;
             displayTranscription(transcribedWords);
             resultsDiv.classList.remove('hidden');
 
         } catch (error) {
             console.error('Transcription Error:', error);
-            alert('Failed to transcribe audio. See console for details.');
+            alert('An error occurred during transcription. Please check the console for details.');
         } finally {
+            // 6. Finalize UI
             loader.classList.add('hidden');
+            transcribeButton.disabled = false;
+            transcribeButton.textContent = '1. Transcribe Audio';
         }
     }
 
+    function sliceAudioBuffer(buffer) {
+        const chunks = [];
+        const sampleRate = buffer.sampleRate;
+        const totalSamples = buffer.length;
+        const chunkSamples = CHUNK_DURATION_SECONDS * sampleRate;
+
+        for (let offset = 0; offset < totalSamples; offset += chunkSamples) {
+            const remainingSamples = totalSamples - offset;
+            const currentChunkSamples = Math.min(chunkSamples, remainingSamples);
+
+            const chunkBuffer = audioContext.createBuffer(
+                buffer.numberOfChannels,
+                currentChunkSamples,
+                sampleRate
+            );
+
+            for (let channel = 0; channel < buffer.numberOfChannels; channel++) {
+                const sourceData = buffer.getChannelData(channel);
+                const chunkData = chunkBuffer.getChannelData(channel);
+                chunkData.set(sourceData.subarray(offset, offset + currentChunkSamples));
+            }
+
+            chunks.push({
+                buffer: chunkBuffer,
+                startTime: offset / sampleRate,
+            });
+        }
+        return chunks;
+    }
+
+    async function transcribeChunk(chunkBlob) {
+        const formData = new FormData();
+        formData.append('audio', chunkBlob, 'chunk.wav');
+        
+        const response = await fetch('/api/transcribe', { method: 'POST', body: formData });
+        if (!response.ok) {
+            const errorBody = await response.text();
+            throw new Error(`Server error: ${response.statusText} - ${errorBody}`);
+        }
+        const result = await response.json();
+        return result.words;
+    }
+    
+    // --- UI and Clipping Functions (no changes from previous version) ---
     function displayTranscription(words) {
         words.forEach((wordData, index) => {
             const wordEl = document.createElement('span');
@@ -79,10 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const wordEl = document.createElement('span');
         wordEl.textContent = wordData.word;
         wordEl.className = 'word-token';
-        // Store data needed for clipping
         wordEl.dataset.startTime = wordData.startTime;
         wordEl.dataset.endTime = wordData.endTime;
-        // Allow removing word by clicking it again
         wordEl.addEventListener('click', () => wordEl.remove());
         phraseOutput.appendChild(wordEl);
     }
@@ -100,11 +162,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }));
 
         const totalDuration = segments.reduce((sum, seg) => sum + (seg.end - seg.start), 0);
+        if (totalDuration <= 0) return;
+
         const offlineContext = new OfflineAudioContext(originalAudioBuffer.numberOfChannels, audioContext.sampleRate * totalDuration, audioContext.sampleRate);
         
         let currentTime = 0;
         for (const segment of segments) {
             const duration = segment.end - segment.start;
+            if (duration <= 0) continue;
             const source = offlineContext.createBufferSource();
             source.buffer = originalAudioBuffer;
             source.start(currentTime, segment.start, duration);
@@ -123,7 +188,6 @@ document.addEventListener('DOMContentLoaded', () => {
         clippedAudioPlayer.play();
     }
 
-    // Helper function to convert AudioBuffer to a WAV file Blob
     function bufferToWave(abuffer) {
         let numOfChan = abuffer.numberOfChannels,
             length = abuffer.length * numOfChan * 2 + 44,
@@ -134,20 +198,11 @@ document.addEventListener('DOMContentLoaded', () => {
             offset = 0,
             pos = 0;
 
-        setUint32(0x46464952); // "RIFF"
-        setUint32(length - 8); // file length - 8
-        setUint32(0x45564157); // "WAVE"
-
-        setUint32(0x20746d66); // "fmt " chunk
-        setUint32(16); // length = 16
-        setUint16(1); // PCM (uncompressed)
-        setUint16(numOfChan);
-        setUint32(abuffer.sampleRate);
-        setUint32(abuffer.sampleRate * 2 * numOfChan); // avg. bytes/sec
-        setUint16(numOfChan * 2); // block-align
-        setUint16(16); // 16-bit
-        setUint32(0x61746164); // "data" - chunk
-        setUint32(length - pos - 4); // chunk length
+        setUint32(0x46464952); setUint32(length - 8); setUint32(0x45564157);
+        setUint32(0x20746d66); setUint32(16); setUint16(1); setUint16(numOfChan);
+        setUint32(abuffer.sampleRate); setUint32(abuffer.sampleRate * 2 * numOfChan);
+        setUint16(numOfChan * 2); setUint16(16); setUint32(0x61746164);
+        setUint32(length - pos - 4);
 
         for (i = 0; i < abuffer.numberOfChannels; i++)
             channels.push(abuffer.getChannelData(i));
