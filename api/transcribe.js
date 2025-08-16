@@ -1,21 +1,19 @@
-import { buffer } from 'micro';
-import axios from 'axios';
+const axios = require('axios');
 
-export const config = {
-  api: {
-    bodyParser: false, // handle raw binary upload
-  },
-};
-
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   if (req.method !== 'POST') {
-    return res.status(405).send('Method Not Allowed');
+    res.status(405).send('Method Not Allowed');
+    return;
   }
 
   try {
-    const buf = await buffer(req);
+    // Read raw audio bytes
+    const chunks = [];
+    for await (const chunk of req) chunks.push(chunk);
+    const buf = Buffer.concat(chunks);
     const base64Audio = buf.toString('base64');
 
+    // Gemini API request
     const response = await axios.post(
       'https://api.genai.google.com/v1alpha2/models/gemini-2.0-flash:generateContent',
       {
@@ -26,23 +24,23 @@ export default async function handler(req, res) {
             config: {
               responseModalities: ['TEXT'],
               temperature: 0.5,
-              maxOutputTokens: 1024,
-            },
-          },
-        ],
+              maxOutputTokens: 1024
+            }
+          }
+        ]
       },
       {
         headers: {
           'Authorization': `Bearer ${process.env.GEMINI_API_KEY}`,
-          'Content-Type': 'application/json',
-        },
+          'Content-Type': 'application/json'
+        }
       }
     );
 
     const transcript = response.data.candidates[0].content.parts[0].text;
     res.status(200).json({ transcript });
   } catch (error) {
-    console.error(error);
+    console.error(error.response?.data || error.message);
     res.status(500).json({ error: 'Transcription failed' });
   }
-}
+};

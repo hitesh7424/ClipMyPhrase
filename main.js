@@ -7,11 +7,17 @@ uploadBtn.addEventListener('click', async () => {
     const file = audioUpload.files[0];
     if (!file) return alert('Please select an audio file');
 
+    // Update audio player
+    const url = URL.createObjectURL(file);
+    audioPlayer.src = url;
+    audioPlayer.play();
+
     const reader = new FileReader();
     reader.onload = async () => {
         try {
             const response = await fetch('/api/transcribe', {
                 method: 'POST',
+                headers: { 'Content-Type': 'application/octet-stream' },
                 body: reader.result
             });
             if (!response.ok) throw new Error('Transcription failed');
@@ -23,9 +29,4 @@ uploadBtn.addEventListener('click', async () => {
         }
     };
     reader.readAsArrayBuffer(file);
-
-    // Update audio player
-    const url = URL.createObjectURL(file);
-    audioPlayer.src = url;
-    audioPlayer.play();
 });
